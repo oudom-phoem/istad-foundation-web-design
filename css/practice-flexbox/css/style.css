@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.title h1 {
+  font-size: 3.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.title p {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+header {
+  background-color: #e8f0fa;
+  margin: 2rem 8rem;
+  border-radius: 15px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 2rem 30rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: #2d68c2;
+}
+
+.nav-list .active {
+  background-color: #2d68c2;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.cards-container {
+  padding: 0 8rem;
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 30rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.badge {
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge a {
+  text-decoration: none;
+
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+}
+
+.beginner {
+  color: #4ac599;
+  background-color: rgb(74, 197, 153, 0.2);
+}
+
+.intermediate {
+  color: #20a4ba;
+  background-color: rgb(32, 164, 186, 0.2);
+}
+
+.badge ion-icon {
+  font-size: 2rem;
+}
+
+.badge ion-icon[name="heart"] {
+  color: #d6293d;
+}
+
+.card-title {
+  font-size: 2rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #666;
+
+  margin-bottom: 1rem;
+}
+
+.rating {
+  list-style: none;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.rating p {
+  letter-spacing: 2px;
+}
+
+.rating ion-icon {
+  color: #f8c102;
+  fill: #f8c102;
+}
+
+.card-footer {
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 1.5rem 1rem;
+}
+
+.hours,
+.lectures {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hours ion-icon {
+  color: #d6293d;
+}
+
+.lectures ion-icon {
+  color: #fd7e13;
+}
