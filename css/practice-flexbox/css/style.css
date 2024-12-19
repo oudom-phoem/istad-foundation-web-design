@@ -12,6 +12,11 @@ body {
   font-family: sans-serif;
 }
 
+.container {
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
 .title {
   display: flex;
   flex-direction: column;
@@ -59,9 +64,8 @@ header {
 .cards-container {
   padding: 0 8rem;
   display: flex;
-  gap: 2.5rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .card {
