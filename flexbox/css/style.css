@@ -198,10 +198,11 @@ header {
 
   .cards-container {
     padding: 0 2rem;
+    justify-content: center;
   }
 
   .card {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -211,7 +212,6 @@ header {
   }
 
   .card {
-    width: 100%;
     margin-bottom: 1rem;
   }
 
