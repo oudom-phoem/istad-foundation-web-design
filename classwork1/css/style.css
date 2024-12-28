@@ -139,6 +139,15 @@ body {
   background-color: #fff;
   border-radius: 0.8rem;
   box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.bookmark {
+  color: var(--secondary-color);
+  font-size: 2.2rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
 }
 
 .course-img {
