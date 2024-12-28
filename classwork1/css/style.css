@@ -193,6 +193,11 @@ body {
   color: #6f42c1;
 }
 
+.all-level {
+  background-color: #fffbea;
+  color: #d4a017;
+}
+
 .solid-heart {
   color: red;
   width: 1.8rem;
