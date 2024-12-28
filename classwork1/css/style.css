@@ -1,7 +1,7 @@
 :root {
   --primary-color: #253b95;
   --secondary-color: #eab305;
-  --font-family: "Roboto", serif;
+  --font-family: "Roboto", Arial, sans-serif;
 }
 
 * {
