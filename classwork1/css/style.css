@@ -152,6 +152,7 @@ body {
 
 .course-img {
   width: 100%;
+  border-radius: 0.8rem;
 }
 
 .course-content {
