@@ -85,12 +85,12 @@ body {
   font-size: 4.4rem;
   font-weight: 700;
   margin-bottom: 1.6rem;
-  color: #000;
+  color: var(--primary-color);
 }
 
 .hero-description {
   font-size: 1.6rem;
-  color: #999;
+  color: var(--primary-color);
 }
 
 .section-categories {
