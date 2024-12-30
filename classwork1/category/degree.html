@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses ISTAD</title>
+    <link rel="icon" href="../img/istad-icon.png" type="image/png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#"
+        ><img class="logo" src="../img/istad-logo.webp" alt="ISTAD logo"
+      /></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#">Courses</a></li>
+          <li><a class="main-nav-link" href="#">Enroll</a></li>
+          <li><a class="main-nav-link" href="#">Services</a></li>
+          <li><a class="main-nav-link" href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="main-btn">
+        <button class="btn btn-login">Login</button>
+        <button class="btn btn-register">Register</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <h1 class="heading-primary">Available Courses</h1>
+        <p class="hero-description">
+          <span id="typed"></span>
+        </p>
+      </section>
+
+      <section class="section-categories">
+        <ul class="categories-nav-list">
+          <li>
+            <a class="categories-nav-link" href="../index.html">All Courses</a>
+          </li>
+          <li><a class="categories-nav-link active" href="#">Degree</a></li>
+          <li>
+            <a class="categories-nav-link" href="./web.html">Web Development</a>
+          </li>
+          <li>
+            <a class="categories-nav-link" href="./mobile.html"
+              >Mobile Development</a
+            >
+          </li>
+          <li>
+            <a class="categories-nav-link" href="./programming.html"
+              >Programming</a
+            >
+          </li>
+          <li>
+            <a class="categories-nav-link" href="./others.html">Others</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-courses">
+        <div class="course" data-aos="zoom-in" data-aos-duration="2000">
+          <ion-icon class="bookmark" name="bookmark"></ion-icon>
+          <img
+            class="course-img"
+            src="../img/bachelor.jpg"
+            alt="Bachelor degree"
+          />
+          <div class="course-content">
+            <div class="course-level-row">
+              <div class="course-level-text all-level">All level</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6 solid-heart"
+              >
+                <path
+                  d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                />
+              </svg>
+            </div>
+            <p class="course-title">Bachelor of IT</p>
+            <p class="course-description">
+              អាជីពការងារដែលនិស្សិតអាចទទួលបានក្រោយបញ្ចប់ការសិក្សា៖ Software
+              Developer, Security Analyst...
+            </p>
+            <div class="rating">
+              <div class="rating-stars">
+                <ion-icon class="star" name="star"></ion-icon>
+                <ion-icon class="star" name="star"></ion-icon>
+                <ion-icon class="star" name="star"></ion-icon>
+                <ion-icon class="star" name="star"></ion-icon>
+                <ion-icon class="star" name="star"></ion-icon>
+              </div>
+              <p class="rating-text">5.0/5.0</p>
+            </div>
+            <div class="course-meta">
+              <div class="course-duration">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 outline-clock"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+
+                4 years
+              </div>
+              <div class="course-lectures">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6 solid-calendar"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+
+                130 credits
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="course" data-aos="zoom-in" data-aos-duration="2000">
+          <ion-icon class="bookmark" name="bookmark"></ion-icon>
+          <img
+            class="course-img"
+            src="../img/bachelor.jpg"
+            alt="Association degree"
+          />
+          <div class="course-content">
+            <div class="course-level-row">
+              <div class="course-level-text all-level">All level</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6 solid-heart"
+              >
+                <path
+                  d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+                />
+              </svg>
+            </div>
+            <p class="course-title">Association of IT</p>
+            <p class="course-description">
+              អាជីពការងារដែលនិស្សិតអាចទទួលបានក្រោយបញ្ចប់ការសិក្សា៖ Software
+              Developer, Security Analyst...
+            </p>
+            <div class="rating">
+              <div class="rating-stars">
+                <ion-icon class="star" name="star"></ion-icon>
+                <ion-icon class="star" name="star"></ion-icon>
+                <ion-icon class="star" name="star"></ion-icon>
+                <ion-icon class="star" name="star"></ion-icon>
+                <ion-icon class="star" name="star"></ion-icon>
+              </div>
+              <p class="rating-text">5.0/5.0</p>
+            </div>
+            <div class="course-meta">
+              <div class="course-duration">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 outline-clock"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+
+                2 years
+              </div>
+              <div class="course-lectures">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6 solid-calendar"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.75 2.25A.75.75 0 0 1 7.5 3v1.5h9V3A.75.75 0 0 1 18 3v1.5h.75a3 3 0 0 1 3 3v11.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V7.5a3 3 0 0 1 3-3H6V3a.75.75 0 0 1 .75-.75Zm13.5 9a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+
+                72 credits
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="../img/istad-logo.webp" alt="ISTAD logo" />
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li><a class="footer-nav-link" href="#">Home</a></li>
+            <li><a class="footer-nav-link" href="#">Courses</a></li>
+            <li><a class="footer-nav-link" href="#">Enroll</a></li>
+            <li><a class="footer-nav-link" href="#">Services</a></li>
+            <li><a class="footer-nav-link" href="#">About</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <a href="https://web.facebook.com/istad.co" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 ISTAD. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <span>
+      <a href="#">
+        <ion-icon class="arrow" name="arrow-up-circle"></ion-icon>
+      </a>
+    </span>
+
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Typed.js -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var typed = new Typed("#typed", {
+          strings: [
+            "Available Courses",
+            "Short Courses",
+            "Full-time Courses",
+            "Join us today!",
+          ],
+          typeSpeed: 50,
+          backSpeed: 25,
+          loop: true,
+        });
+      });
+    </script>
+  </body>
+</html>
