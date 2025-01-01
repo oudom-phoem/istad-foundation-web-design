@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* reset 1rem to 10px */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #e9ecef;
+}
+
+p {
+  line-height: 2;
+  font-size: 1.6rem;
+}
+
+.card {
+  margin: 10rem auto;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  width: 90rem;
+  border-radius: 1.5rem;
+}
+
+.card-title {
+  text-align: center;
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #3578f6;
+}
+
+.card-title span {
+  font-variant: small-caps;
+}
+
+.fa-hand-sparkles {
+  color: #fecf4b;
+  transform: rotate(50deg);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dev-cam {
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+}
+
+.dev-cam {
+  text-transform: uppercase;
+  color: #3578f6;
+}
+
+.description {
+  font-size: 1.4rem;
+  font-family: monospace;
+  word-spacing: 0.3rem;
+  color: #333;
+}
+
+hr {
+  background-color: #3578f6;
+  height: 0.2rem;
+  border: none;
+}
+
+.btn {
+  border: none;
+  background-color: #3578f6;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.6rem;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
