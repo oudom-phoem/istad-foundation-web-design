@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-section {
+  background-image: url(./inflicted.png);
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-header-content {
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
