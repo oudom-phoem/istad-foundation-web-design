@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 2rem auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+hr {
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin-bottom: 1.4rem;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.profile-section,
+.main-section,
+footer {
+  padding: 1rem;
+}
+
+.profile-section {
+  margin-bottom: 1rem;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.profile-info {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.profile-info a:link,
+.profile-info a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.profile-info a:hover,
+.profile-info a:active {
+  text-decoration: underline;
+}
+
+.objective-section p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.experience-section p,
+.education-section p {
+  color: grey;
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 1.8rem;
+}
+
+.experience-section ul,
+.education-section ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-hr {
+  margin-top: 4rem;
+  height: 1px;
+  background-color: #ddd;
+}
+
+footer p {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+}
+
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  color: #888;
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .profile-box {
+    flex-direction: row;
+  }
+}
