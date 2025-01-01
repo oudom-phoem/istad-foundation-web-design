@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.grid-item {
+  background-color: #a7b4f6;
+  height: 5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.grid-item:nth-child(4),
+.grid-item:nth-child(7) {
+  background-color: #6366e9;
+  grid-column: span 2;
+}
