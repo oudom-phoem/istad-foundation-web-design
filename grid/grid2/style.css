@@ -107,3 +107,29 @@ body {
 .card11 {
   grid-column: span 3;
 }
+
+@media only screen and (max-width: 880px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6,
+  .card7,
+  .card8,
+  .card9,
+  .card10,
+  .card11 {
+    grid-column: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
