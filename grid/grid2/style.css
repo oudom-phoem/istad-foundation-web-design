@@ -52,6 +52,12 @@ body {
   color: #333;
   background-color: #fff;
   padding: 1.6rem;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-color: #ddd;
 }
 
 .cards-container {
@@ -64,6 +70,11 @@ body {
 .card {
   background-color: #fff;
   padding: 1.6rem;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
 }
 
 .card-description {
@@ -128,7 +139,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .cards-container {
     grid-template-columns: 1fr;
   }
