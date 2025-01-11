@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Lottie Animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Typed.js CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Particles -->
+    <script src="particles.js-master/particles.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="exampleModalLabel">Modal title</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Open Navigation -->
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="#"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img
+            class="bi me-2 rounded-circle"
+            src="./img/cat.jpeg"
+            alt="cat"
+            width="40"
+            height="40"
+          />
+          <span class="fs-4">Oudom Phoem</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#project" class="nav-link">Project</a>
+          </li>
+          <li class="nav-item">
+            <a href="#course" class="nav-link">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <!-- Close Navigation -->
+
+    <!-- Open Hero -->
+    <div class="position-relative" id="home">
+      <!-- Add particles container -->
+      <div id="particles-js"></div>
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6" data-aos="fade-left">
+            <lottie-player
+              src="./img/Animation - 1736598387875.json"
+              background="transparent"
+              speed="1"
+              style="width: 300px; height: 300px"
+              loop
+              autoplay
+            ></lottie-player>
+          </div>
+          <div class="col-lg-6" data-aos="fade-right">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              I'm a <span id="typed"></span>
+            </h1>
+            <p class="lead">
+              Quickly design and customize responsive mobile-first sites with
+              Bootstrap, the world’s most popular front-end open source toolkit,
+              featuring Sass variables and mixins, responsive grid system,
+              extensive prebuilt components, and powerful JavaScript plugins.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                Primary
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                Default
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Close Hero -->
+
+    <!-- Open skills -->
+    <div class="container py-5 mb-5" id="about">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="mb-4">About Me</h2>
+          <p class="lead mx-auto" style="max-width: 700px">
+            I am a passionate full-stack developer with experience in modern web
+            technologies. My journey in software development has equipped me
+            with a diverse set of skills spanning front-end and back-end
+            development.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h3 class="text-center mb-4">My Tech Stacks</h3>
+          <div class="skills d-flex gap-3 justify-content-center flex-wrap">
+            <img src="https://skillicons.dev/icons?i=html" alt="HTML logo" />
+            <img src="https://skillicons.dev/icons?i=css" alt="CSS logo" />
+            <img
+              src="https://skillicons.dev/icons?i=bootstrap"
+              alt="Bootstrap logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=tailwind"
+              alt="Tailwind CSS logo"
+            />
+            <img src="https://skillicons.dev/icons?i=sass" alt="SASS logo" />
+            <img
+              src="https://skillicons.dev/icons?i=js"
+              alt="JavaScript logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=jquery"
+              alt="Jquery logo"
+            />
+            <img src="https://skillicons.dev/icons?i=react" alt="React logo" />
+            <img src="https://skillicons.dev/icons?i=redux" alt="Redux logo" />
+            <img src="https://skillicons.dev/icons?i=next" alt="Next.js logo" />
+            <img src="https://skillicons.dev/icons?i=c" alt="C logo" />
+            <img src="https://skillicons.dev/icons?i=cpp" alt="C++ logo" />
+            <img
+              src="https://skillicons.dev/icons?i=python"
+              alt="Python logo"
+            />
+            <img src="https://skillicons.dev/icons?i=java" alt="Java logo" />
+            <img src="https://skillicons.dev/icons?i=dart" alt="Dart logo" />
+            <img src="https://skillicons.dev/icons?i=swift" alt="Swift logo" />
+            <img src="https://skillicons.dev/icons?i=cs" alt="C# logo" />
+            <img
+              src="https://skillicons.dev/icons?i=nodejs"
+              alt="Node.js logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=express"
+              alt="Express.js logo"
+            />
+            <img src="https://skillicons.dev/icons?i=flask" alt="Flask logo" />
+            <img
+              src="https://skillicons.dev/icons?i=fastapi"
+              alt="FastAPI logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=spring"
+              alt="Spring logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=flutter"
+              alt="Flutter logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=androidstudio"
+              alt="Android Studio logo"
+            />
+            <img src="https://skillicons.dev/icons?i=unity" alt="Unity logo" />
+            <img
+              src="https://skillicons.dev/icons?i=unreal"
+              alt="Unreal logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=sqlite"
+              alt="SQLite logo"
+            />
+            <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL logo" />
+            <img
+              src="https://skillicons.dev/icons?i=postgres"
+              alt="PostgreSQL logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=mongodb"
+              alt="MondgoDB logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=supabase"
+              alt="Supabase logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=firebase"
+              alt="Firebase logo"
+            />
+            <img src="https://skillicons.dev/icons?i=aws" alt="AWS logo" />
+            <img src="https://skillicons.dev/icons?i=linux" alt="Linux logo" />
+            <img
+              src="https://skillicons.dev/icons?i=ubuntu"
+              alt="Ubuntu logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=anaconda"
+              alt="Anaconda logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=sklearn"
+              alt="scikit-learn logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=tensorflow"
+              alt="Tensorflow logo"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=pytorch"
+              alt="Pytorch logo"
+            />
+            <img src="https://skillicons.dev/icons?i=vim" alt="Vim logo" />
+            <img src="https://skillicons.dev/icons?i=git" alt="Git logo" />
+            <img
+              src="https://skillicons.dev/icons?i=github"
+              alt="GitHub logo"
+            />
+            <img src="https://skillicons.dev/icons?i=figma" alt="Figma logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Close Skills -->
+
+    <!-- Open Education -->
+    <div class="container mb-5" id="education">
+      <div class="row">
+        <h2 class="mb-5">Educations</h2>
+        <div class="col-lg-4">
+          <img
+            class="rounded-circle"
+            width="140"
+            height="140"
+            src="./img/istad-logo.png"
+            alt=""
+          />
+
+          <h3 class="fw-normal">Foundation Course</h3>
+          <p>
+            Some representative placeholder content for the three columns of
+            text below the carousel. This is the first column.
+          </p>
+          <p><a class="btn btn-secondary" href="#">Curriculum »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img
+            class="rounded-circle"
+            width="140"
+            height="140"
+            src="./img/harvard-logo.png"
+            alt=""
+          />
+          <h3 class="fw-normal">BSc Computer Science</h3>
+          <p>
+            Some representative placeholder content for the three columns of
+            text below the carousel. This is the first column.
+          </p>
+          <p><a class="btn btn-secondary" href="#">Curriculum »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img
+            class="rounded-circle"
+            width="140"
+            height="140"
+            src="./img/mit-logo.png"
+            alt=""
+          />
+          <h3 class="fw-normal">MSc Artificial intelligence</h3>
+          <p>
+            Some representative placeholder content for the three columns of
+            text below the carousel. This is the first column.
+          </p>
+          <p><a class="btn btn-secondary" href="#">Curriculum »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+    </div>
+    <!-- Close Education -->
+
+    <!-- Open Project -->
+    <div class="container py-5" id="project">
+      <h2 class="text-end mb-1">Projects</h2>
+      <div class="row featurette py-5">
+        <div class="col-md-7">
+          <h3 class="featurette-heading fw-normal lh-1">
+            Heart Disease Detector
+          </h3>
+          <p class="lead">
+            Learn how to build a machine learning-powered classification model
+            to predict whether a patient has heart disease or not based on their
+            health parameters and heart measurements.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img
+            class="img-fluid mx-auto border"
+            width="500"
+            height="500"
+            src="./img/project1.webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <hr class="my-5" />
+      <div class="row featurette py-5">
+        <div class="col-md-7 order-md-2">
+          <hh3 class="featurette-heading fw-normal lh-1">
+            Bulldozer Predictor Model
+          </hh3>
+          <p class="lead">
+            Take into account the previous sales history of bulldozers to build
+            a machine learning-powered regression model to answer the question,
+            "how much is that bulldozer worth?"
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img
+            class="img-fluid mx-auto border"
+            width="500"
+            height="500"
+            src="./img/project2.webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <hr class="my-5" />
+      <div class="row featurette py-5">
+        <div class="col-md-7">
+          <h3 class="featurette-heading fw-normal lh-1">Dog Vision</h3>
+          <p class="lead">
+            Harness the power of computer vision neural networks to build an
+            image classification model capable of predicting over 100 different
+            dog breeds. You'll even be able to try it on your own dog images!
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img
+            class="img-fluid mx-auto border"
+            width="500"
+            height="500"
+            src="./img/project3.webp"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Close Project -->
+
+    <!-- Open Course -->
+    <div class="container mt-5" id="course">
+      <h2 class="text-center mb-5">Courses</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <!-- Placeholder1 -->
+        <div class="col mb-5 d-flex justify-content-center">
+          <div
+            class="card"
+            aria-hidden="true"
+            style="max-width: 18rem"
+            data-aos="zoom-in-down"
+          >
+            <img src="./img/next.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a
+                class="btn btn-primary disabled placeholder col-6"
+                aria-disabled="true"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card1 -->
+        <div class="col mb-5 d-flex justify-content-center">
+          <div class="card" style="max-width: 18rem" data-aos="zoom-in-down">
+            <img src="./img/next.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Next.js</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Enroll
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Placeholder2 -->
+        <div class="col mb-5 d-flex justify-content-center">
+          <div
+            class="card"
+            aria-hidden="true"
+            style="max-width: 18rem"
+            data-aos="zoom-in-down"
+          >
+            <img src="./img/next.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a
+                class="btn btn-primary disabled placeholder col-6"
+                aria-disabled="true"
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card2 -->
+        <div class="col mb-5 d-flex justify-content-center">
+          <div class="card" style="max-width: 18rem" data-aos="zoom-in-down">
+            <img src="./img/next.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Next.js</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Enroll
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card3 -->
+        <div class="col mb-5 d-flex justify-content-center">
+          <div class="card" style="max-width: 18rem" data-aos="zoom-in-down">
+            <img src="./img/next.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Next.js</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Enroll
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card4 -->
+        <div class="col mb-5 d-flex justify-content-center">
+          <div class="card" style="max-width: 18rem" data-aos="zoom-in-down">
+            <img src="./img/next.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Next.js</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Enroll
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder3 -->
+        <div class="col mb-5 d-flex justify-content-center">
+          <div
+            class="card"
+            aria-hidden="true"
+            style="max-width: 18rem"
+            data-aos="zoom-in-down"
+          >
+            <img src="./img/next.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a
+                class="btn btn-primary disabled placeholder col-6"
+                aria-disabled="true"
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder4 -->
+        <div class="col mb-5 d-flex justify-content-center">
+          <div
+            class="card"
+            aria-hidden="true"
+            style="max-width: 18rem"
+            data-aos="zoom-in-down"
+          >
+            <img src="./img/next.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a
+                class="btn btn-primary disabled placeholder col-6"
+                aria-disabled="true"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Close Course -->
+
+    <!-- Open Footer -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#home" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link px-2 text-body-secondary"
+              >Education</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a href="#project" class="nav-link px-2 text-body-secondary"
+              >Project</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#course" class="nav-link px-2 text-body-secondary"
+              >Courses</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link px-2 text-body-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 Oudom Phoem</p>
+      </footer>
+    </div>
+    <!-- Close Footer -->
+
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Typed.js JavaScript -->
+    <script>
+      var typed = new Typed("#typed", {
+        strings: [
+          "Frontend Developer",
+          "Backend Developer",
+          "Full Stack Developer",
+          "Software Engineer",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+        backDelay: 1000,
+      });
+    </script>
+
+    <!-- Particles -->
+    <script src="particles.js-master/particles.js"></script>
+    <script>
+      particlesJS.load(
+        "particles-js",
+        "particles.js-master/particles.json",
+        function () {
+          console.log("particles loaded");
+        }
+      );
+    </script>
+  </body>
+</html>
